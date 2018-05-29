@@ -1,4 +1,4 @@
-# eslint-plugin-classcraft-eslint-plugin
+# classcraft-eslint-plugin
 
 Clascraft ESLint Plugin
 
@@ -10,13 +10,13 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-classcraft-eslint-plugin`:
+Next, install `classcraft-eslint-plugin`:
 
 ```
-$ npm install eslint-plugin-classcraft-eslint-plugin --save-dev
+$ npm install classcraft-eslint-plugin --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-classcraft-eslint-plugin` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `classcraft-eslint-plugin` globally.
 
 ## Usage
 
