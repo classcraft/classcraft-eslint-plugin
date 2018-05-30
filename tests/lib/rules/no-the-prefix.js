@@ -29,12 +29,23 @@ ruleTester.run("no-the-prefix", rule, {
     valid: [
         {
             code: "const foo = \"bar\";",
-        }
+        },
+        {
+            code: "const the = \"bar\";",
+        },
+        {
+            code: "const thefoo = \"bar\";",
+        },
     ],
 
     invalid: [
         {
             code: "const theFoo = \"bar\";",
-        }
-    ]
+            errors: [
+                {
+                    message: "Please don't start a variable name with \"the\"",
+                },
+            ],
+        },
+    ],
 });
