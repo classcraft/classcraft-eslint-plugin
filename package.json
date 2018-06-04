@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-classcraft",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Clascraft ESLint Plugin",
   "keywords": [
     "eslint",

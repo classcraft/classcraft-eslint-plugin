@@ -17,5 +17,7 @@ Examples of **correct** code for this rule:
 ```js
 
 const foo = "bar";
+const the = "bar";
+const thefoo = "bar";
 
 ```

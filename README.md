@@ -2,50 +2,27 @@
 
 Clascraft ESLint Plugin
 
-## Installation
-
-You'll first need to install [ESLint](http://eslint.org):
-
+## When you add a rule
+- Make sure to use the following options in the rule definition
 ```
-$ npm i eslint --save-dev
-```
-
-Next, install `eslint-plugin-classcraft`:
-
-```
-$ npm install eslint-plugin-classcraft --save-dev
-```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-classcraft` globally.
-
-## Usage
-
-Add `eslint-plugin-classcraft` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-
-```json
 {
-    "plugins": [
-        "eslint-plugin-classcraft"
-    ]
+    meta: {
+        docs: {
+            ...
+            category: "classcraft",
+            recommended: true,
+            ...
+        },
+        ...
+    },
 }
 ```
+- Bump the MINOR version in `package.json`
 
+## When you modify an existing rule
+- Bump the PATCH version in `package.json`
 
-Then configure the rules you want to use under the rules section.
-
-```json
-{
-    "rules": {
-        "eslint-plugin-classcraft/rule-name": 2
-    }
-}
-```
-
-## Supported Rules
-
-* Fill in provided rules here
-
-
-
-
-
+## When you bump the version in `package.json`
+- Create a release matching the new version number in the repository
+- Update the hash part of the package URI in the `package.json` of Game to match the new version number
+- Run `meteor npm install` for Game
